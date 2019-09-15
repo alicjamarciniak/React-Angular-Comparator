@@ -13,7 +13,7 @@ module.exports = merge(common, {
         new HtmlWebpackPlugin({
             chunks: ['main'],
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src/angular-app.html'),
+            template: path.resolve(__dirname, './src/angular-app.html'),
             inject: false
         })
     ]

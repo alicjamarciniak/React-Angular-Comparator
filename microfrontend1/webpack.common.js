@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        'main': path.resolve(__dirname, 'src/angular-app.js')
+        'main': path.resolve(__dirname, './angular-app.ts')
     },
     resolve: {
         extensions: ['.js']
@@ -19,6 +19,10 @@ module.exports = {
                         cacheDirectory: true
                     }
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
             }
         ]
     }

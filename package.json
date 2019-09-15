@@ -1,7 +1,7 @@
 {
   "name": "web-component",
   "version": "1.0.0",
-  "description": "Three micro frontends built with different technologies (React v15, React v0.14, and Angular)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "clean:dist": "rimraf dist",
