@@ -5,23 +5,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
     output: {
-        filename: '[name].js',
+        filename: 'test.js',
     },
     devServer: {
         port: 4300,
     },
     devtool: 'inline-source-map',
-    plugins: [
-        new HtmlWebpackPlugin({
-            chunks: ['main'],
-            filename: 'angular-app.html',
-            template: path.resolve(__dirname, './angular-app.html'),
-            inject: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: path.resolve(__dirname, './index.html'),
-            inject: false
-        })
-    ]
+    // plugins: [
+    //     new HtmlWebpackPlugin({
+    //         filename: 'angular-app.html',
+    //         template: './src/angular-app.html',
+    //         inject: false
+    //     }),
+    //     new HtmlWebpackPlugin({
+    //         filename: 'index.html',
+    //         template: path.resolve(__dirname, './index.html'),
+    //         inject: false
+    //     })
+    // ]
 });
